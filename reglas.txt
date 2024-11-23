@@ -1,0 +1,6 @@
+Reglas
+
+Compilar: cobc -o -x programa.cob
+
+- Siempre terminar con punto.
+- Cobol no es case sensitive.

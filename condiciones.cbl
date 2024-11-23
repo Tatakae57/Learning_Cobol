@@ -1,0 +1,26 @@
+		IDENTIFICATION DIVISION.
+			PROGRAM-ID. CONDICIONES.
+
+		DATA DIVISION.
+		WORKING-STORAGE SECTION.
+			01 NUM1 PIC 9(4).
+			01 NUM2 PIC 9(4).
+			01 RESULT PIC 9(5).
+
+		PROCEDURE DIVISION.
+			MAIN-PROCEDURE.
+			DISPLAY "Ingrese el primer numero: ".
+			ACCEPT NUM1.
+			DISPLAY "Ingrese el segundo numero: ".
+			ACCEPT NUM2.
+			ADD NUM1 TO NUM2 GIVING RESULT.
+
+			IF RESULT >= 100
+			DISPLAY "La suma supera o es igual a 100."
+			ELSE
+			DISPLAY "La suma no supera ni iguala a los 100."
+			END-IF.
+
+			STOP RUN.
+
+		END PROGRAM CONDICIONES.
